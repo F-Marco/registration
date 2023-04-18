@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O'hearn|Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+
+            <h2>Create Account</h2>
+
+        </div>
+<form class="form" id="form">
+            
+    <div class="form-control">
+        <label for="">Name</label>
+
+            
+    <input type="text" 
+    placeholder="First Name" id="firstname">
+    <input type="text" 
+    placeholder="Last Name" id="lastname">
+
+            <i class="fa-light fa-binary-circle-check"></i>
+            <i class="fa-light fa-octagon-exclamation"></i>
+            <small>Error message</small>
+
+            </div>
+<div class="form-control gender">
+    <label for="">Gender</label>
+    
+    <input class="radio" type="radio"
+     name="gender" value="Male">Male
+    <input class="radio" type="radio"
+     name="gender" value="female">Female
+            <small>Error message</small>
+    
+            </div>            
+        
+<div class="form-control">
+
+    <label for="">Email</label>
+        <input type="email" 
+        placeholder="user@example.com" id="email">
+
+            <i class="fa-check-circle"></i>
+            <i class="fa-exclamation-circle"></i>
+            <small>Error message</small>
+
+            </div>
+<div class="form-control">
+    <label for="">Password</label>
+    
+        <input type="password" id="password">
+    
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+    
+                </div>
+<div class="form-control">
+    <label for="">Password Conformation</label>
+        
+        <input type="password" id="passwordTWo">
+        
+            <i class="fas fa-check-circle"></i>
+            <i class="fas fa-exclamation-circle"></i>
+            <small>Error message</small>
+        
+                </div>
+   <button>Submit</button>
+</form>        
+    </div>
+
+</body>
+</html>
