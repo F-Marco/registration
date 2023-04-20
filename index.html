@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O'hearn|Registration Form</title>
 
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+   
     <link rel="stylesheet" href="style.css">
+
+    
 
 </head>
 <body>
@@ -17,7 +21,7 @@
             <h2>Create Account</h2>
 
         </div>
-<form class="form" id="form">
+<form class="form" id="form" GET>
             
     <div class="form-control">
         <label for="">Name</label>
@@ -25,11 +29,18 @@
             
     <input type="text" 
     placeholder="First Name" id="firstname">
+
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle "></i>
+
+            <small>Error message</small>
+
     <input type="text" 
     placeholder="Last Name" id="lastname">
 
-            <i class="fa-light fa-binary-circle-check"></i>
-            <i class="fa-light fa-octagon-exclamation"></i>
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+
             <small>Error message</small>
 
             </div>
@@ -37,9 +48,10 @@
     <label for="">Gender</label>
     
     <input class="radio" type="radio"
-     name="gender" value="Male">Male
+     name="gender" value="Male" id="gendermale">Male
     <input class="radio" type="radio"
-     name="gender" value="female">Female
+     name="gender" value="female" id="genderfemale">Female
+
             <small>Error message</small>
     
             </div>            
@@ -50,8 +62,9 @@
         <input type="email" 
         placeholder="user@example.com" id="email">
 
-            <i class="fa-check-circle"></i>
-            <i class="fa-exclamation-circle"></i>
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+
             <small>Error message</small>
 
             </div>
@@ -60,24 +73,26 @@
     
         <input type="password" id="password">
     
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+
             <small>Error message</small>
     
                 </div>
 <div class="form-control">
     <label for="">Password Conformation</label>
         
-        <input type="password" id="passwordTWo">
+        <input type="password" id="passwordtwo">
         
-            <i class="fas fa-check-circle"></i>
-            <i class="fas fa-exclamation-circle"></i>
+        <i class="fa fa-check-circle"></i>
+        <i class="fa fa-exclamation-circle"></i>
+
             <small>Error message</small>
         
                 </div>
-   <button>Submit</button>
+   <button id="Submit">Submit</button>
 </form>        
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
